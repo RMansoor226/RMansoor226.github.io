@@ -7,53 +7,97 @@ html {
     display: flex;
     flex-direction: column;
     position: fixed;
+
     top: 0;
     left: 0;
-    width: 15%;
-    height: 100vh;
     gap: 8px;
     padding: 10px;
+
+    width: 15%;
+    height: 100vh;
+
+    text-align: center;
+    background-color: darkgrey;
 }
 
 header {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-content: flex-start;
 
     /* Positioning */
-    position: fixed;
+    margin: 0;
+    padding: 0;
     top: 0;
-    left: 30%;
-    right: 30%;
+    left: 16.5%;
+    position: fixed;
 
-    /* Sizing */
-    width: 50%;
-    height: 80px;
-    padding: 0 20px;
+    /* Size */
+    width: 85%;
+    height: 12.5%;
 
     /* Background */
-    background-color: white;
-    border-radius: 8px;
+    background-color: black;
 }
 
 header p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Sizing */
+    width: 100%;
+    height: 65%;
     font-size: 36px;
+
+    /* Positioning */
+    margin: 0;
+    text-align: center;
+
+    /* Background */
+    background-color: white;
 }
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 35%;
+    align-items: center;
+}
+
+header nav button {
+    padding: 10px;
+
+    /* Size */
+    height: 100%;
+    width: 15%;
+    font-size: 24px;
+}
+
 
 main {
     margin-left: 15%;
-    padding-top: 100px;
+}
+
+h1 {
+    padding-top: 200px;
+    text-align: center;
+
+    font-size: 36px;
 }
 
 #container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     padding: 20px;
 }
 
 #container article {
-    width: 500px;
+    height: 600px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     background-color: white;
