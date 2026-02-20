@@ -1,0 +1,74 @@
+html {
+    background-color: dodgerblue;
+}
+
+#wholePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#teamBuilder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 5px solid gold;
+    border-radius: 20px;
+
+    background-color: white;
+}
+
+#lookupPokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px;
+
+}
+
+#pokemonImageAndSound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pokemonImageAndSound > img {
+    width: 256px;
+    height: 256px;
+}
+
+#pokemonAbilities {
+    display: grid;
+    grid-template-columns: 15vw 15vw;
+    grid-template-rows: auto auto;
+    grid-column-gap: 2vw;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px 20px;
+}
+
+#fetchButton {
+    margin: 20px;
+}
+
+#pokemonTeam {
+    display: grid;
+    grid-template-columns: 32vw;
+    margin-bottom: 20px;
+}
+
+.teamMember {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid black;
+}

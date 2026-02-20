@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon Team Builder</title>
+    <link rel="stylesheet" href="asynch.css">
+</head>
+<body>
+    <div id="wholePage">
+        <form id="teamBuilder">
+            <section id="lookupPokemon">
+                <label for="lookup" id="lookupLabel">Name or ID</label>
+                <span>
+                    <input type="text" id="lookup" name="lookup">
+                    <button type="button" onClick="lookupPokemon()">Find</button><br>
+                </span>
+
+            </section>
+
+            <section id="pokemonImageAndSound">
+                <img id="pokemonSprite" src="placeholder.png" alt="Placeholder Pokemon Image"><br>
+                <audio id="pokemonCry" controls src="placeholder.mp3">Your browser doesn't support the audio element.</audio><br>
+            </section>
+
+            <section id="pokemonAbilities">
+                <select id="firstAbility" name="firstAbility"></select>
+                <select id="secondAbility" name="secondAbility"></select>
+                <select id="thirdAbility" name="thirdAbility"></select>
+                <select id="fourthAbility" name="fourthAbility"></select>
+            </section>
+
+            <span id="fetchButton">
+                <button type="button" onClick="addToTeam()">Add to Team</button>
+            </span>
+
+            <div id="pokemonTeam">
+
+            </div>
+        </form>
+    </div>
+</body>
+
+<footer>
+    <script src="asynch.js"></script>
+</footer>
+</html>
