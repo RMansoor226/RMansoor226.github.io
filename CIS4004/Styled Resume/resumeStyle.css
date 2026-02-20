@@ -1,0 +1,168 @@
+html {
+  background-color: cadetblue;
+  color: white;
+
+  font-family: "Garamond", "serif";
+}
+
+header {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#allContent {
+  display: flex;
+  flex-direction: column;
+}
+
+#contactsDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+
+  list-style-type: none;
+
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+.entireSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #b3d4fc;
+  color: black;
+  border-radius: 5px;
+
+  /* Box Layout */
+  padding: 5px;
+  margin: 5px auto;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 20px;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  width: 27.5vw;
+}
+
+.sectionContent {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-evenly;
+  align-items: stretch;
+
+  max-height: 0;
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+
+  transition: max-height 2s ease, max-width 2s ease, opacity 2s ease;
+}
+
+/* Reveal content when hovering over header */
+.sectionHeader:hover + .sectionContent,
+.sectionHeader:hover + .skillList,
+  /* Keep content revealed when hovered over */
+.sectionContent:hover,
+  /* Keep content visible if clicked on  */
+#contactToggle:checked + .sectionContent,
+#summaryToggle:checked + .sectionContent,
+#educationToggle:checked + .sectionContent,
+#experienceToggle:checked + .sectionContent,
+#projectsToggle:checked + .sectionContent,
+#technicalToggle:checked + .skillList,
+#skillsToggle:checked + .skillList {
+  max-height: 85vh;
+  max-width: 85vw;
+  opacity: 1;
+}
+
+.subsectionContent {
+  flex: 1;
+  box-sizing: border-box;
+
+  color: black;
+  background-color: darkgrey;
+
+  border-radius: 5px;
+
+  margin: 0 5px;
+  padding: 5px;
+
+}
+
+.skillList {
+  display: flex;
+  flex-direction: column;
+
+  max-height: 0;
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+
+  transition: max-height 2s ease, max-width 2s ease, opacity 2s ease;
+}
+
+@media (max-width: 412px) {
+  .sectionContent {flex-direction: column;}
+  .subsectionContent{margin: 5px 5px;}
+
+  /* Reveal content when hovering over header */
+  .sectionHeader:hover + .sectionContent,
+  .sectionHeader:hover + .skillList,
+    /* Keep content revealed when hovered over */
+  .sectionContent:hover,
+    /* Keep content visible if clicked on  */
+  #contactToggle:checked + .sectionContent,
+  #summaryToggle:checked + .sectionContent,
+  #educationToggle:checked + .sectionContent,
+  #experienceToggle:checked + .sectionContent,
+  #projectsToggle:checked + .sectionContent,
+  #technicalToggle:checked + .skillList,
+  #skillsToggle:checked + .skillList {
+    max-height: 120vh;
+  }
+}
+
+input {}
+
+#summaryText {}
+
+#educationHeader {}
+
+#ucfEducation {}
+
+#ufEducation {}
+
+#experienceHeader {}
+
+#cloudComputing {}
+
+#asmeControls {}
+
+#huntingtonTutor {}
+
+#socialMedia {}
+
+#movieRecommender {}
+
+#recursiveDescent {}
+
+#technicalHeader {}
+
+#technicalList {}
+
+#softSkillsHeader {}
+
+#softSkillsList {}
