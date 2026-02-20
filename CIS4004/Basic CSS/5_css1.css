@@ -1,0 +1,72 @@
+html {
+    background-color: skyblue;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h1, h2 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+#paragraph2 {
+    background-color: white;
+    border-collapse: collapse;
+    border: 4px solid darkgreen;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 20px;
+    width: 850px;
+    line-height: 2;
+}
+
+.blue {
+    background-color: darkblue;
+    padding: 20px;
+    color: white;
+}
+
+ol {
+    text-align: left;
+    list-style-type: decimal-leading-zero;
+    transform: translate(-20px, 0px);
+    line-height: 1.5;
+}
+
+ol li a {
+    color: darkblue;
+    font-size: 14px;
+}
+
+section p a {
+    color: darkred;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    background-color: lightgray;
+    padding: 2px;
+}
+
+td {
+    background-color: white;
+    padding: 10px;
+}
+
+
+
+
+
